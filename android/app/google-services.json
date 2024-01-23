@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "535276098778",
+    "project_id": "jm-guide",
+    "storage_bucket": "jm-guide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535276098778:android:ff5614b5173a1f3c82c1e3",
+        "android_client_info": {
+          "package_name": "com.example.guide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535276098778-0752ima11jlqtht2ms45imi13j4d00v8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0aKksPpMB0rUM7Eo7gYhTYaTMh5Iw5Ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535276098778-0752ima11jlqtht2ms45imi13j4d00v8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "535276098778-3djgk25p1bieep9i0iccrdp10unbutr1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.guide"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

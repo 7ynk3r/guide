@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -49,6 +43,15 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyAJ8gOOAD0cFp26yF08zL989E6sOL4E9no',
+    appId: '1:535276098778:web:7ad40c1aba0d2d1282c1e3',
+    messagingSenderId: '535276098778',
+    projectId: 'jm-guide',
+    authDomain: 'jm-guide.firebaseapp.com',
+    storageBucket: 'jm-guide.appspot.com',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyC0aKksPpMB0rUM7Eo7gYhTYaTMh5Iw5Ok',
     appId: '1:535276098778:android:ff5614b5173a1f3c82c1e3',
@@ -65,5 +68,15 @@ class DefaultFirebaseOptions {
     storageBucket: 'jm-guide.appspot.com',
     iosClientId: '535276098778-3djgk25p1bieep9i0iccrdp10unbutr1.apps.googleusercontent.com',
     iosBundleId: 'com.example.guide',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyC1BvmwvUR1gJICc7vWn26JNzcCLbK6akc',
+    appId: '1:535276098778:ios:d9c4229a5bccfb9382c1e3',
+    messagingSenderId: '535276098778',
+    projectId: 'jm-guide',
+    storageBucket: 'jm-guide.appspot.com',
+    iosClientId: '535276098778-n76uumq5ui4ssu0mv6thrkfukkq5hsgk.apps.googleusercontent.com',
+    iosBundleId: 'com.example.guide.RunnerTests',
   );
 }
